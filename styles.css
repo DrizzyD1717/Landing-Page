@@ -1,0 +1,396 @@
+:root {
+  /* Primary */
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --Bright-red: hsl(12, 88%, 59%);
+  /* Secondary */
+  --Dark-g-b: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Very-LIght-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: var(--Very-LIght-gray);
+  background-color: var(--Bright-red);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(12, 89%, 65%);
+  box-shadow: 2px 2px 2px hsl(12, 76%, 64%);
+}
+
+a {
+  color: var(--Very-Dark-Blue);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--Very-Dark-Blue);
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: var(--Dark-g-b);
+}
+
+body {
+  width: 100vw;
+  background-image: url(./images/bg-tablet-pattern.svg);
+  background-repeat: no-repeat;
+  background-color: #fff;
+  overflow-x: hidden;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-position: top;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 85%;
+  padding: 2rem 0;
+  margin: 0 auto;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  padding-right: 1rem;
+}
+
+header a:hover {
+  color: var(--Dark-g-b);
+}
+
+.hero {
+  display: flex;
+  gap: 0 4rem;
+  margin: 3rem auto 3rem auto;
+  width: 85%;
+}
+
+.left,
+.right {
+  width: 45%;
+}
+
+.hero .left h1 {
+  margin-bottom: 1.5rem;
+}
+
+.left-content {
+  max-width: 300px;
+}
+
+.hero .right img {
+  width: 100%;
+}
+
+.hero .left button {
+  margin-top: 2rem;
+}
+
+.part-2 {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  gap: 0 4rem;
+}
+
+.part-2 .right .index {
+  color: var(--Very-LIght-gray);
+  background-color: var(--Bright-red);
+  padding: 1rem;
+  border-radius: 14px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.part-2 .right .one {
+  display: flex;
+  gap: 0 1rem;
+}
+
+.part-2 .right .two,
+.part-2 .right .three {
+  margin-top: 1.5rem;
+}
+
+.testimonials-sec {
+  width: 100%;
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.testimonials-sec .testimonials {
+  display: flex;
+  gap: 0 1rem;
+  margin: 4rem 0 3rem 0;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 3rem 0;
+}
+
+.testimonials-sec .testimonials .testimony {
+  background-color: var(--Very-LIght-gray);
+  border-radius: 10px;
+  padding: 2rem 1rem 1rem 1rem;
+  width: 400px;
+  min-width: 40%;
+  position: relative;
+}
+
+.testimony img {
+  position: absolute;
+  top: -2rem;
+  left: 45%;
+  width: 10%;
+  border-radius: 50%;
+  background-color: red;
+}
+
+footer .footer-top {
+  width: 100%;
+  background-color: var(--Bright-red);
+  padding: 2rem 3rem;
+}
+
+footer .footer-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+footer .footer-top h2 {
+  color: var(--Very-LIght-gray);
+  max-width: 400px;
+}
+
+footer .footer-top button {
+  background-color: var(--Very-LIght-gray);
+  color: var(--Bright-red);
+}
+
+footer .footer-bottom {
+  background-color: var(--Very-Dark-Blue);
+  width: 100%;
+  padding: 2rem 2.5rem;
+  position: relative;
+}
+
+footer .footer-bottom .logo-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+footer nav a {
+  color: var(--Very-LIght-gray);
+}
+
+footer nav a:hover {
+  color: var(--Bright-red);
+}
+
+footer .footer-bottom .footer-bottom-content {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .footer-bottom-content nav.navigation ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.5rem;
+} */
+
+.footer-bottom-content nav.navigation ul li {
+  display: inline-block;
+}
+
+form input {
+  padding: 0.5rem;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.copyright {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  color: var(--Dark-g-b);
+}
+
+/* This is for the mobile navigation */
+.mobile-nav-container {
+  display: none;
+}
+
+.mobile-actual-nav {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.mobile-actual-nav nav {
+  background-color: #fff;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  position: absolute;
+  top: 100px;
+  left: 9%;
+}
+
+.mobile-actual-nav nav ul {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mobile-actual-nav nav ul li {
+  margin-bottom: 1rem;
+}
+
+.hide {
+  display: none;
+}
+/* Responsive CSS */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    gap: 2rem 0;
+    align-items: center;
+  }
+  .hero .left {
+    width: 100%;
+    order: 2;
+  }
+  .hero .left .left-content {
+    width: 100%;
+    max-width: unset;
+  }
+  .hero .right {
+    width: 100%;
+    order: 1;
+  }
+  .part-2 {
+    flex-direction: column;
+    gap: 2rem 0;
+  }
+  .part-2 .left {
+    width: 100%;
+    text-align: center;
+  }
+  .part-2 .right {
+    width: 100%;
+  }
+  .testimonials-sec .testimonials .testimony {
+    width: 100%;
+    min-width: 100%;
+    margin: 0 auto;
+    padding-top: 4rem;
+  }
+  footer .footer-top-content {
+    padding: 3rem 1.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+  footer .footer-bottom-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .logo-socials {
+    order: 4;
+    gap: 2rem;
+  }
+  .navigation {
+    order: 2;
+  }
+  .links {
+    order: 3;
+  }
+  .contact-us {
+    order: 1;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    order: 1;
+    max-width: 500px;
+  }
+  footer .logo {
+    order: 2;
+  }
+  .copyright {
+    bottom: 0;
+  }
+  header {
+    display: none;
+  }
+  .mobile-nav-container {
+    display: block;
+    width: 100%;
+  }
+  .mobile-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .part-2 .right h3 {
+    background-color: var(--Very-Pale-Red);
+    padding: 0.5rem;
+  }
+}
